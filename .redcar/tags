@@ -1,4 +1,4 @@
-1311955287
+1311958531
 AIRPORTS	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  AIRPORTS =
 AddDateAndTimeToFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	class AddDateAndTimeToFlights 
 AddOriginIndex	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	class AddOriginIndex 
