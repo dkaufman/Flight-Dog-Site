@@ -1,0 +1,14 @@
+
+
+<%= will_paginate @flights%>
+
+<ul>
+  <table>
+    <tr class = "heading">
+      <td>Observation Date</td><td>Flight Date</td><td>Departs</td><td>Origin</td><td>Destination</td><td>Price</td>
+    </tr>
+    <%= render @flights %>
+  </table>
+</ul>
+
+<%= will_paginate @flights%>

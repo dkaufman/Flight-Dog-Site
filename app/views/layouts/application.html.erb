@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Flight Dog: <%= @title %> </title>
+		<%= csrf_meta_tag %>
+		<%= render 'layouts/stylesheets'%>
+    <%= javascript_include_tag "jquery-1.6.2", "rails", "highcharts" %>  
+	</head>
+	<body>
+    <div class = "container">
+      <section>
+        <table>
+          <tr>
+            <td>
+              <%= render 'layouts/logo'%>
+            </td>
+            <td>
+              <%= yield %>
+            </td>
+          </tr>
+        </table>
+			</section>
+			<%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
+		</div>
+	</body>
+</html>

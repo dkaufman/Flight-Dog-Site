@@ -1,0 +1,76 @@
+footer{
+  height: 30px;
+  color: #282828;
+  background: #8BBED6;
+}
+
+/* background: #98B27F; */
+body{
+  background: url(../images/background.png);
+}
+
+section{
+  padding-top: 10px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px 90px;
+  font-size: 120%;
+  color: #686868;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #282828;
+}
+
+td.sidebar {
+  width: 30%;
+  background: #8BBED6;
+  text-align: center;
+  padding: 15px 30px;
+  font-size: 130%;
+  color: #484848;
+}
+
+.info{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background: #8BBED6;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 130%;
+  color: #484848;
+}
+
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background: #8BBED6;
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 130%;
+  color: #484848;
+  height: 300px;
+}
+
+.note{
+  color: red;
+}
+
+.round {
+  -moz-border-radius:    15px;
+  -webkit-border-radius: 15px;
+  border-radius:         15px;
+}
+
+.heading {
+  font-size: 110%;
+}

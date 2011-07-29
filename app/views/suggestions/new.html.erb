@@ -1,0 +1,19 @@
+We always love hearing from our users.<br />
+Please use the comment field below to submit any questions or suggestions.
+<br />
+<br />
+
+<%= form_for(@suggestion) do |f| %>
+<div>
+  <%= f.label :email %><br />
+  <%= f.text_field :email %>
+</div>
+<div>
+  <%= f.label :content %><br />
+  <%= f.text_area :content %>
+</div>
+<div>
+  <%= f.submit "Submit"%>
+</div>
+</div>
+<% end %>

@@ -1,0 +1,44 @@
+# == Schema Information
+#
+# Table name: flights
+#
+#  id              :integer         not null, primary key
+#  observationDate :datetime
+#  flightDate      :date
+#  origin          :string(255)
+#  destination     :string(255)
+#  price           :float
+#  flightNumber    :string(255)
+#  departs         :time
+#  arrives         :time
+#  duration        :integer
+#  seats           :integer
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  observationDate: 2011-07-25 01:54:21
+  flightDate: 2011-07-25
+  origin: MyString
+  destination: MyString
+  price: 1.5
+  flightNumber: MyString
+  departs: 2011-07-25 01:54:21
+  arrives: 2011-07-25 01:54:21
+  duration: 1
+  seats: 1
+
+two:
+  observationDate: 2011-07-25 01:54:21
+  flightDate: 2011-07-25
+  origin: MyString
+  destination: MyString
+  price: 1.5
+  flightNumber: MyString
+  departs: 2011-07-25 01:54:21
+  arrives: 2011-07-25 01:54:21
+  duration: 1
+  seats: 1

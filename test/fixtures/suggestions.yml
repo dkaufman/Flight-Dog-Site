@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: suggestions
+#
+#  id         :integer         not null, primary key
+#  email      :string(255)
+#  content    :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email: MyString
+  content: MyString
+
+two:
+  email: MyString
+  content: MyString
