@@ -7,6 +7,7 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 gem 'will_paginate'
+gem 'rails3-jquery-autocomplete'
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -1,5 +1,6 @@
 class FlightsController < ApplicationController
   def index
+    
     @title = "Search Flights"
     flightYear = params[:flightDate]["year"]
     flightMonth = params[:flightDate]["month"]
@@ -12,7 +13,13 @@ class FlightsController < ApplicationController
                                                   :destination => params[:destination],
                                                   :flightDate => flightDate,
                                                   :departs => flightDeparts
-                                                  }).paginate(:page => params[:page])
-  
+                                                  })
+                                                  
+      
+    @series = ""  
+    @flights.each do |f|
+      @series << "[#{f.observationDate.to_i*1000},#{f.price}],"
+    end
+    @series.chop
   end
 end

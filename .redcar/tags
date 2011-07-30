@@ -1,10 +1,14 @@
-1311958531
+1312059268
 AIRPORTS	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  AIRPORTS =
 AddDateAndTimeToFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	class AddDateAndTimeToFlights 
 AddOriginIndex	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	class AddOriginIndex 
 Application	/Users/Daniel/Documents/Sites/flight_dog/config/application.rb	  class Application 
 ApplicationController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/application_helper.rb	module ApplicationHelper
+AutoComplete	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	module AutoComplete 
+AutoCompleteMacrosHelper	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	module AutoCompleteMacrosHelper 
+AutoCompleteTest	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	class AutoCompleteTest 
+ClassMethods	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	  module ClassMethods
 CommentTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/comment_test.rb	class CommentTest 
 CommentsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/comments_controller_test.rb	class CommentsControllerTest 
 CommentsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/comments_helper.rb	module CommentsHelper
@@ -42,6 +46,10 @@ ajaxHandleResponses	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/
 all	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function all(iterator, context)
 any	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function argumentNames()
+auto_complete_field	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	  def auto_complete_field(field_id, options = {})
+auto_complete_for	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	    def auto_complete_for(object, method, options = {})
+auto_complete_result	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	  def auto_complete_result(entries, field, phrase = nil)
+auto_complete_stylesheet	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	    def auto_complete_stylesheet
 bind	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function blank()
@@ -139,6 +147,7 @@ inGroupsOf	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype
 include	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function include(object)
 include	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function include(pattern)
 include	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function include(value)
+included	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	  def self.included(base)
 index	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/flights_controller.rb	  def index
 index	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function index(value)
 indexOf	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function indexOf(item, i)
@@ -218,6 +227,7 @@ scan	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	fu
 select	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function select()
 select	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function select(selector, scope)
 set	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function set(key, value)
+setup	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def setup
 size	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function size()
 size	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function size()
 sortBy	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -235,6 +245,10 @@ succ	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	fu
 succ	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function succ()
 t	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function t( gotoEnd )
 testChange	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function testChange( e )
+test_auto_complete_field	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def test_auto_complete_field
+test_auto_complete_result	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def test_auto_complete_result
+test_text_field_with_auto_complete	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def test_text_field_with_auto_complete
+text_field_with_auto_complete	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	  def text_field_with_auto_complete(object, method, tag_options = {}, completion_options = {})
 times	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function times(count)
 times	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function times(iterator, context)
 toArray	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function toArray()
@@ -266,6 +280,7 @@ up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_a
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(array, args)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(element, content)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(object)
+url_for	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	      def url_for(options)
 values	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function values()
 values	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function values(object)
 viewportOffset	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function viewportOffset(forElement)

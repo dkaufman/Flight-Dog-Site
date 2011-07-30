@@ -1,6 +1,7 @@
 FlightDog::Application.routes.draw do
 
   get "suggestions/new"
+  get 'pages/autocomplete_flight_origin'
 
   resources :suggestions, :only => [:new, :create]
   resources :flights

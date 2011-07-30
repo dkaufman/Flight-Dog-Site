@@ -1,8 +1,27 @@
 
 
-<%= will_paginate @flights%>
 
-<ul>
+
+<div id="flights_chart" style="width: 560px; height: 300px;"></div>
+<script type="text/javascript" charset="utf-8"> 
+$(function () {  
+  new Highcharts.Chart({  
+    chart: { renderTo: 'flights_chart' },  
+    title: { text: 'FlightDog\'s Observations' },
+    xAxis: {type: "datetime"},
+    legend: {enabled: false},
+    point: { marker: {enabled: false}},
+    series: [{
+      name: "Price",
+      data: [<%= @series %>],
+      marker: {enabled: false}
+    }]
+  });  
+});  
+</script> 
+
+
+<% if false %>
   <table>
     <tr class = "heading">
       <td>Observation Date</td><td>Flight Date</td><td>Departs</td><td>Origin</td><td>Destination</td><td>Price</td>
@@ -10,5 +29,4 @@
     <%= render @flights %>
   </table>
 </ul>
-
-<%= will_paginate @flights%>
+<% end %>

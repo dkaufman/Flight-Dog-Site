@@ -19,6 +19,9 @@
 
 class Flight < ActiveRecord::Base
   
+  attr_protected  :id, :observationDate, :flightDate, :origin, :destination, :price, :flightNumber,
+                  :departs, :arrives, :duration, :seats, :created_at, :updated_at
+  
   AIRPORTS = ["BOS", "BWI"]
   
   def readonly?
