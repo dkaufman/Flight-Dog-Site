@@ -10,14 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110726044542) do
-
-  create_table "comments", :force => true do |t|
-    t.string   "email"
-    t.string   "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20110804010946) do
 
   create_table "flights", :force => true do |t|
     t.datetime "observationDate"

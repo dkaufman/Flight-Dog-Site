@@ -9,6 +9,10 @@ class PagesController < ApplicationController
 
   def help
     @title = "Help"
+    @r = InitR()
+    x = [1,2,3,4]
+    @result = @r.mean(x)
+    
   end
 
   def contact

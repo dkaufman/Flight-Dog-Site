@@ -8,7 +8,9 @@ $(function () {
   new Highcharts.Chart({  
     chart: { renderTo: 'flights_chart' },  
     title: { text: 'FlightDog\'s Observations' },
-    xAxis: {type: "datetime"},
+    xAxis: {type: "datetime",
+            title: { text: "Observation Date"}},
+    yAxis: {title: { text: "Price"}},
     legend: {enabled: false},
     point: { marker: {enabled: false}},
     series: [{

@@ -1,4 +1,4 @@
-1312061533
+1313555101
 AIRPORTS	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  AIRPORTS =
 AddDateAndTimeToFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	class AddDateAndTimeToFlights 
 AddOriginIndex	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	class AddOriginIndex 
@@ -22,10 +22,12 @@ FlightsController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/fligh
 FlightsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/flights_controller_test.rb	class FlightsControllerTest 
 FlightsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/flights_helper.rb	module FlightsHelper
 FlightsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/flights_helper_test.rb	class FlightsHelperTest 
+InitR	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/application_controller.rb	  def InitR
 PagesController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	class PagesController 
 PagesControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/pages_controller_test.rb	class PagesControllerTest 
 PagesHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/pages_helper.rb	module PagesHelper
 PagesHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/pages_helper_test.rb	class PagesHelperTest 
+RemoveCommentsTable	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	class RemoveCommentsTable 
 Str	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function Str(key, holder, stack)
 Suggestion	/Users/Daniel/Documents/Sites/flight_dog/app/models/suggestion.rb	class Suggestion 
 SuggestionTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/suggestion_test.rb	class SuggestionTest 
@@ -277,6 +279,7 @@ up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725050904_create_sug
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725055421_create_flights.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	  def self.up
+up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	  def self.up
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(array, args)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(element, content)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(object)
