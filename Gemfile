@@ -9,7 +9,7 @@ gem 'rake', '0.8.7'
 gem 'sqlite3'
 gem 'will_paginate'
 gem 'rails3-jquery-autocomplete'
-gem 'rsruby'
+#gem 'rsruby'
 # Use unicorn as the web server
 # gem 'unicorn'
 
