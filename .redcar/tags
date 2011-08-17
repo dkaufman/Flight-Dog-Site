@@ -1,10 +1,10 @@
-1313624235
+1313624599
 AIRPORTS	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  AIRPORTS =
 AddDateAndTimeToFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	class AddDateAndTimeToFlights 
 AddOriginIndex	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	class AddOriginIndex 
 Application	/Users/Daniel/Documents/Sites/flight_dog/config/application.rb	  class Application 
 ApplicationController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/application_controller.rb	class ApplicationController 
-ApplicationHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/application_helper.rb	module ApplicationHelper
+ApplicationHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/application_helper.rb	module ApplicationHelper 
 AutoComplete	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	module AutoComplete 
 AutoCompleteMacrosHelper	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	module AutoCompleteMacrosHelper 
 AutoCompleteTest	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	class AutoCompleteTest 
