@@ -1,4 +1,4 @@
-1315179583
+1315179966
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
@@ -68,7 +68,6 @@ FlightsController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/fligh
 FlightsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/flights_controller_test.rb	class FlightsControllerTest 
 FlightsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/flights_helper.rb	module FlightsHelper
 FlightsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/flights_helper_test.rb	class FlightsHelperTest 
-HoursToWait	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/initiate.rb	HoursToWait =
 InitR	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/application_controller.rb	  def InitR
 InvalidCallback	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	  class InvalidCallback 
 JBCollect	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def JBCollect(date, fromCity, toCity)
@@ -110,7 +109,6 @@ SuggestionsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/function
 SuggestionsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/suggestions_helper.rb	module SuggestionsHelper
 SuggestionsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/suggestions_helper_test.rb	class SuggestionsHelperTest 
 Test	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	    module Test
-TimesToRepeat	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/initiate.rb	TimesToRepeat =
 Type	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function Type(o)
 UserTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/user_test.rb	class UserTest 
 Worker	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	  class Worker 
