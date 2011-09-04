@@ -1,4 +1,4 @@
-1315177176
+1315179583
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
@@ -135,8 +135,6 @@ any	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	fun
 args	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/recipes.rb	    def args
 argumentNames	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function argumentNames()
 around	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def around(event, &block)
-atCollect	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/ATCollect.rb		def atCollect(day, month, fromCity, toCity)
-atController	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/ATController.rb	def atController
 attempts	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :attempts
 auto_complete_field	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	  def auto_complete_field(field_id, options = {})
 auto_complete_for	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	    def auto_complete_for(object, method, options = {})
@@ -339,8 +337,6 @@ isString	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.j
 isUndefined	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function isUndefined(object)
 iter	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function iter(name)
 jQuerySub	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function jQuerySub( selector, context )
-jbCollect	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/JBCollect.rb		def jbCollect(date, fromCity, toCity)
-jbController	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/JBController.rb	def jbController
 keys	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function keys()
 keys	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function keys(object)
 klass	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function klass()
