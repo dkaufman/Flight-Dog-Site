@@ -1,0 +1,20 @@
+<div id="flights_chart" style="width: 560px; height: 300px;"></div>
+<script type="text/javascript" charset="utf-8"> 
+$(function () {  
+  new Highcharts.Chart({  
+    chart: { renderTo: 'flights_chart' },  
+    title: { text: 'FlightDog\'s Observations' },
+    xAxis: {type: "datetime",
+            title: { text: "Observation Date"}},
+    yAxis: {title: { text: "Price"}},
+    legend: {enabled: false},
+    point: { marker: {enabled: false}},
+    series: [{
+      name: "Price",
+      data: [<%= @series %>],
+      marker: {enabled: false}
+    }]
+  });  
+});  
+</script> 
+
