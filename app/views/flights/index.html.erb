@@ -1,34 +1,13 @@
-
-
-
-
-<div id="flights_chart" style="width: 560px; height: 300px;"></div>
-<script type="text/javascript" charset="utf-8"> 
-$(function () {  
-  new Highcharts.Chart({  
-    chart: { renderTo: 'flights_chart' },  
-    title: { text: 'FlightDog\'s Observations' },
-    xAxis: {type: "datetime",
-            title: { text: "Observation Date"}},
-    yAxis: {title: { text: "Price"}},
-    legend: {enabled: false},
-    point: { marker: {enabled: false}},
-    series: [{
-      name: "Price",
-      data: [<%= @series %>],
-      marker: {enabled: false}
-    }]
-  });  
-});  
-</script> 
-
-
-<% if false %>
   <table>
+  <% if @flights.length != 0 %>
     <tr class = "heading">
-      <td>Observation Date</td><td>Flight Date</td><td>Departs</td><td>Origin</td><td>Destination</td><td>Price</td>
+      <td>Flight Date</td><td>Departs</td><td>Origin</td><td>Destination</td>
     </tr>
     <%= render @flights %>
+  <% else %>
+  <div class = "info round">
+    There are no flights in our database <br> that match your search criteria.
+  </div>
+  <% end %>
   </table>
 </ul>
-<% end %>

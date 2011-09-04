@@ -1,25 +1,40 @@
-class FlightsController < ApplicationController
+class FlightsController < ApplicationController  
+  
   def index
-    
     @title = "Search Flights"
-    flightYear = params[:flightDate]["year"]
-    flightMonth = params[:flightDate]["month"]
-    flightDay = params[:flightDate]["day"]
-    flightDate = Date.new(flightYear.to_i, flightMonth.to_i, flightDay.to_i)
-    flightDeparts = Time.utc(2000, "jan", 1, params[:departs]["hour"], params[:departs]["minute"])
-
-    
-            @flights = Flight.find(:all, :conditions => { :origin => params[:origin],
-                                                  :destination => params[:destination],
-                                                  :flightDate => flightDate,
-                                                  :departs => flightDeparts
-                                                  })
+    flightDate = Date.strptime(params[:flightDate], fmt='%m/%d/%Y')
+    @flights = Flight.find(:all, :conditions => { :origin => params[:origin],
+                                                :destination => params[:destination],
+                                                :flightDate => flightDate
+                                                #:airline => params[:airline]
+                                                  }, :group => 'departs')
                                                   
-      
+  end
+  
+  def show
+    @title = "Flight History"
+    
+    referenceFlight = Flight.find(params[:id])
+    @flights = Flight.find(:all, :conditions => { :origin => referenceFlight.origin,
+                                                :destination => referenceFlight.destination,
+                                                :flightDate => referenceFlight.flightDate,
+                                                :departs => referenceFlight.departs
+                                                  })
     @series = ""  
     @flights.each do |f|
       @series << "[#{f.observationDate.to_i*1000},#{f.price}],"
     end
     @series.chop
   end
+    
+  
+  def list
+    list = []
+    flights = Flight.where("airline like ?", "%#{params[:term]}%").limit(10)
+    flights.each { |flight| list << { "label" => flight.airline } }
+    
+    respond_to do |format|
+      format.json { render :json => list.to_json, :layout => false }
+    end
+  end  
 end

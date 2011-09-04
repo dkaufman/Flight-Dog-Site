@@ -1,5 +1,14 @@
-1313624599
+1315177176
+0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
+0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 AIRPORTS	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  AIRPORTS =
+ATCollect	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def ATCollect(day, month, fromCity, toCity)
+ATCollect	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def ATCollect(day, month, fromCity, toCity)
+ATController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def ATController
+ATController	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def ATController
+AddAirlineAttribute	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	class AddAirlineAttribute 
 AddDateAndTimeToFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	class AddDateAndTimeToFlights 
 AddOriginIndex	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	class AddOriginIndex 
 Application	/Users/Daniel/Documents/Sites/flight_dog/config/application.rb	  class Application 
@@ -8,13 +17,50 @@ ApplicationHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/applicati
 AutoComplete	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	module AutoComplete 
 AutoCompleteMacrosHelper	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	module AutoCompleteMacrosHelper 
 AutoCompleteTest	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	class AutoCompleteTest 
+Autoloaded	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/clazz.rb	module Autoloaded
+Autoloaded	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/struct.rb	module Autoloaded
+Backend	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	  module Backend
+Backend	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	  module Backend
+Base	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	    module Base
+Base	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/serialization/active_record.rb	class ActiveRecord::Base
+Callback	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	  class Callback
+CallbackJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class CallbackJob
+Class	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	class Class
 ClassMethods	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	  module ClassMethods
+ClassMethods	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      module ClassMethods
+ClassMethods	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    module ClassMethods
+Clazz	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/clazz.rb	  class Clazz
+ClearLocks	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugins/clear_locks.rb	    class ClearLocks 
+Command	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	  class Command
 CommentTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/comment_test.rb	class CommentTest 
 CommentsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/comments_controller_test.rb	class CommentsControllerTest 
 CommentsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/comments_helper.rb	module CommentsHelper
 CommentsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/comments_helper_test.rb	class CommentsHelperTest 
+CreateDelayedJobs	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	class CreateDelayedJobs 
 CreateFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725055421_create_flights.rb	class CreateFlights 
 CreateSuggestions	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725050904_create_suggestions.rb	class CreateSuggestions 
+CustomRescheduleJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class CustomRescheduleJob 
+DelayMail	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	  module DelayMail
+DelayProxy	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	  class DelayProxy 
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/deserialization_error.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugin.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugins/clear_locks.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/railtie.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	module Delayed
+Delayed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	module Delayed
+DelayedJobGenerator	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/generators/delayed_job/delayed_job_generator.rb	class DelayedJobGenerator 
+DeserializationError	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/deserialization_error.rb	  class DeserializationError 
+EVENTS	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    EVENTS =
+EnqueueJobMod	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class EnqueueJobMod 
+ErrorJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class ErrorJob
+Fable	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	      class Fable
+FairyTail	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	    class FairyTail
 Flight	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	class Flight 
 FlightDog	/Users/Daniel/Documents/Sites/flight_dog/config/application.rb	module FlightDog
 FlightTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/flight_test.rb	class FlightTest 
@@ -22,40 +68,92 @@ FlightsController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/fligh
 FlightsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/flights_controller_test.rb	class FlightsControllerTest 
 FlightsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/flights_helper.rb	module FlightsHelper
 FlightsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/flights_helper_test.rb	class FlightsHelperTest 
+HoursToWait	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/initiate.rb	HoursToWait =
 InitR	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/application_controller.rb	  def InitR
+InvalidCallback	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	  class InvalidCallback 
+JBCollect	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def JBCollect(date, fromCity, toCity)
+JBCollect	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def JBCollect(date, fromCity, toCity)
+JBController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def JBController
+JBController	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def JBController
+Job	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	      class Job
+Lifecycle	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	  class Lifecycle
+LongRunningJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class LongRunningJob
+M	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	module M
+MessageSending	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	  module MessageSending
+Module	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	class Module
+ModuleJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  class ModuleJob
+MyMailer	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/performable_mailer_spec.rb	class MyMailer 
+NamedJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class NamedJob 
+OnPermanentFailureJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class OnPermanentFailureJob 
 PagesController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	class PagesController 
 PagesControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/pages_controller_test.rb	class PagesControllerTest 
 PagesHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/pages_helper.rb	module PagesHelper
 PagesHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/pages_helper_test.rb	class PagesHelperTest 
+ParseObjectFromYaml	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      ParseObjectFromYaml =
+PerformableMailer	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	  class PerformableMailer 
+PerformableMethod	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	  class PerformableMethod 
+Plugin	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugin.rb	  class Plugin
+Plugins	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugins/clear_locks.rb	  module Plugins
+Railtie	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/railtie.rb	  class Railtie 
 RemoveCommentsTable	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	class RemoveCommentsTable 
+ScrapeJob	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	class ScrapeJob 
+SimpleJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class SimpleJob
+Story	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	    class Story
+Story	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/spec_helper.rb	class Story 
 Str	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function Str(key, holder, stack)
+Struct	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	class Struct
+Struct	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/struct.rb	  class Struct 
 Suggestion	/Users/Daniel/Documents/Sites/flight_dog/app/models/suggestion.rb	class Suggestion 
 SuggestionTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/suggestion_test.rb	class SuggestionTest 
 SuggestionsController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/suggestions_controller.rb	class SuggestionsController 
 SuggestionsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/suggestions_controller_test.rb	class SuggestionsControllerTest 
 SuggestionsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/suggestions_helper.rb	module SuggestionsHelper
 SuggestionsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/suggestions_helper_test.rb	class SuggestionsHelperTest 
+Test	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	    module Test
+TimesToRepeat	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/initiate.rb	TimesToRepeat =
 Type	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function Type(o)
 UserTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/user_test.rb	class UserTest 
+Worker	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	  class Worker 
+Yarn	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	        class Yarn
 about	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def about
 abs	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function abs()
 absolutize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function absolutize(element)
+add	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	      def add(type, event, &block)
+add	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def add(type, &callback)      
 addMethods	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function addMethods(source)
 addText	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/controls.js	function addText(mode, condition)
 addToPrefiltersOrTransports	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function addToPrefiltersOrTransports( structure )
+after	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def after(event, &block)
+after	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def after(job)
+after_fork	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	        def after_fork
+after_fork	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def self.after_fork      
 ajaxConvert	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function ajaxConvert( s, response )
 ajaxHandleResponses	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function ajaxHandleResponses( s, jqXHR, responses )
 all	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function all(iterator, context)
+all	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.all
 any	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function any(iterator, context)
+args	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/recipes.rb	    def args
 argumentNames	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function argumentNames()
+around	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def around(event, &block)
+atCollect	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/ATCollect.rb		def atCollect(day, month, fromCity, toCity)
+atController	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/ATController.rb	def atController
+attempts	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :attempts
 auto_complete_field	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	  def auto_complete_field(field_id, options = {})
 auto_complete_for	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	    def auto_complete_for(object, method, options = {})
 auto_complete_result	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	  def auto_complete_result(entries, field, phrase = nil)
 auto_complete_stylesheet	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete_macros_helper.rb	    def auto_complete_stylesheet
+backend	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_reader :backend
+backend=	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def self.backend=(backend)
+before	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def before(event, &block)
+before	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def before(job)
+before_fork	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	        def before_fork
+before_fork	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def self.before_fork
 bind	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function blank()
 buildParams	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function buildParams( prefix, obj, traditional, add )
+c	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/autocomplete-rails.js	function c(a){return b(a).pop().replace(/^\s+/,"")}function b(b){return b.split(a.delimiter)}a.delimiter=$(a).attr("data-delimiter")||null,$(a).autocomplete({source:function(b,d){$.getJSON($(a).attr("data-autocomplete"),{term:c(b.term)},function(){$(arguments[0]).each(function(b,c){var d={};d[c.id]=c,$(a).data(d)}),d.apply(null,arguments)})},search:function(){var a=c(this.value);if(a.length<2)return!1},focus:function(){return!1},select:function(c,d){var f=b(this.value);f.pop(),f.push(d.item.value);if(a.delimiter!=null)f.push(""),this.value=f.join(a.delimiter);else{this.value=f.join(""),$(this).attr("data-id-element")&&$($(this).attr("data-id-element")).val(d.item.id);if($(this).attr("data-update-elements")){var g=$(this).data(d.item.id.toString()),h=$.parseJSON($(this).attr("data-update-elements"));for(var i in h)$(h[i]).val(g[i])}}var j=this.value;$(this).bind("keyup.clearId",function(){$(this).val().trim()!=j.trim()&&($($(this).attr("data-id-element")).val(""),$(this).unbind("keyup.clearId"))}),$(this).trigger("railsAutocomplete.select",d);return!1}})}})}(jQuery)
+callbacks	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugin.rb	    def self.callbacks(&block)
 camelize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function camelize()
 capitalize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function capitalize()
 ceil	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function ceil()
@@ -63,6 +161,7 @@ checkDeficiency	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prot
 checkReadyState	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function checkReadyState()
 clear	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function clear()
 clearFxNow	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function clearFxNow()
+clear_locks!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.clear_locks!(worker_name)
 clone	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function clone()
 clone	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function clone()
 clone	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function clone(object)
@@ -73,54 +172,86 @@ compact	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js
 concat	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function concat()
 contact	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def contact
 copy	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
+count	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.count 
 create	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/suggestions_controller.rb	  def create
 create	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function create()
+create	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.create(attrs = {})
+create!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.create!(*args); create(*args); 
 createActiveXHR	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function createActiveXHR()
 createFxNow	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function createFxNow()
 createStandardXHR	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function createStandardXHR()
+create_job	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/shared_spec.rb	  def create_job(opts = {})
+create_script_file	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/generators/delayed_job/delayed_job_generator.rb	  def create_script_file
 cssNameFor	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function cumulativeOffset(element)
 cumulativeScrollOffset	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function cumulativeScrollOffset(element)
 curry	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function curry()
+daemonize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	    def daemonize
 dasherize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function dasherize()
 dataAttr	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function dataAttr( elem, key, data )
+db_time_now	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.db_time_now
 defaultDisplay	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function defaultDisplay( nodeName )
+default_priority	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
 defer	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function defer()
 define	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function define(D)
 delay	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function delay(timeout)
+delay	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    def delay(options = {})
+delay	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	    def delay(options = {})
+delay	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	  def delay(*args)
+delay_jobs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
+delete_all	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.delete_all
+destroy	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def destroy
+destroy_failed_jobs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :destroy_failed_jobs
 detect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function detect(iterator, context)
 dirCheck	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirCheck	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dispatch	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/effects.js	function dispatch(effect, eventName)
+display_name	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	    def display_name
+display_name	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def display_name
 doScrollCheck	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function doScrollCheck()
 done	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function done( status, statusText, responses, headers )
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725050904_create_suggestions.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725055421_create_flights.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	  def self.down
+down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	  def self.down
+down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	  def self.down
 each	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function each(iterator)
 each	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
 element	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function element(event)
 empty	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function empty()
 endsWith	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function endsWith(pattern)
+enqueue	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	        def enqueue(*args)
+enqueue	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def enqueue(job)
+enqueue	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def enqueue(job)
+error	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def error(job, error)
 escapeHTML	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function escapeHTML()
 evalJSON	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function evalJSON(sanitize)
 evalScript	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function evalScript( i, elem )
 evalScripts	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function evalScripts()
+execute	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def execute(*args, &block)      
 extend	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function extend(destination, source)
 extend	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function extend(tagName)
 extendElementWith	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function extendElementWith(element, methods)
 extendElements	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function extendElements(elements)
 extractScripts	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function extractScripts()
+fail!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def fail!
+failed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      alias_method :failed
+failed	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def failed(job)
+failed?	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def failed?
+failed_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :failed_at
+failure	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def failure(job)
+failure	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def failure; 
 fallback	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/controls.js	function fallback(name, expr)
 find	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function find(elements, expression, index)
 findAll	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function findAll(iterator, context)
 findDOMClass	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function findDOMClass(tagName)
 findElement	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function findElement(event, expression)
 findInputs	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function findInputs( elem )
+find_available	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.find_available(worker_name, limit = 5, max_run_time = Worker.max_run_time)
 fire	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function fire(element, eventName, memo, bubble)
 fireContentLoadedEvent	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function fireContentLoadedEvent()
 first	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function first()
@@ -139,23 +270,43 @@ getWH	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.j
 getWindow	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function getWindow( elem )
 grep	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function grep(filter, iterator, context)
 gsub	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function gsub(pattern, replacement)
+guess_backend	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def self.guess_backend
 handleMethod	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/rails.js	function handleMethod(element)
 handleQueueMarkDefer	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function handleQueueMarkDefer( elem, type, src )
 handleRemote	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/rails.js	function handleRemote(element)
+handle_asynchronously	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	      def handle_asynchronously(method, opts = {})
+handle_failed_job	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def handle_failed_job(job, error)
 handler	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function handler( donor )
+handler	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :handler
+happy_ending	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	      attr_accessor :happy_ending
 help	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def help
 home	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def home
+hook	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def hook(name, *args)
+id	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :id
+id	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        cattr_accessor :id
+importance	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	          attr_accessor :importance
+importance	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	          attr_accessor :importance
 inGroupsOf	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inGroupsOf(number, fillWith)
 include	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function include(object)
 include	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function include(pattern)
 include	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function include(value)
 included	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/lib/auto_complete.rb	  def self.included(base)
+included	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def self.included(base)
 index	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/flights_controller.rb	  def index
 index	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function index(value)
 indexOf	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function indexOf(item, i)
 init	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function init( selector, context )
 initialize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function initialize(object)
 initialize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function initialize(start, end, exclusive)
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	    def initialize(args)
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def initialize
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def initialize
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    def initialize(payload_class, target, options)
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	    def initialize(object, method_name, args)
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugin.rb	    def initialize
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def initialize(options={})
+initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def initialize(hash = {})
+initiate	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def initiate
 inject	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inject(memo, iterator, context)
 inspect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inspect()
 inspect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inspect()
@@ -165,6 +316,8 @@ inspect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js
 interpolate	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function interpolate(object, pattern)
 intersect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function intersect(array)
 invoke	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function invoke(method)
+invoke_job	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def invoke_job
+is	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/shared_spec.rb	    it "should raise a DeserializationError when the job class is 
 isArray	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function isArray(object)
 isBody	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function isBody(element)
 isDetached	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function isDetached(element)
@@ -186,55 +339,139 @@ isString	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.j
 isUndefined	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function isUndefined(object)
 iter	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function iter(name)
 jQuerySub	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function jQuerySub( selector, context )
+jbCollect	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/JBCollect.rb		def jbCollect(date, fromCity, toCity)
+jbController	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/JBController.rb	def jbController
 keys	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function keys()
 keys	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function keys(object)
 klass	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function klass()
 last	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function last()
 lastIndexOf	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function lastIndexOf(item, i)
+last_error	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :last_error
+lifecycle	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def self.lifecycle
+list	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/flights_controller.rb	  def list
 liveConvert	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function liveConvert( type, selector )
 liveHandler	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function liveHandler( event )
+lock_exclusively!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def lock_exclusively!(max_run_time, worker)
+locked_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :locked_at
+locked_by	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :locked_by
+logger	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
 match	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function match()
 match	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function match(element, selector)
 max	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function max(iterator, context)
+max_attempts	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def max_attempts
+max_attempts	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
+max_attempts	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def max_attempts(job)
+max_attempts	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def max_attempts; 
+max_priority	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
+max_run_time	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
 measure	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function measure(element, property)
 merge	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function merge(array, args)
 merge	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function merge(object)
+messages	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :messages
+method_missing	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    def method_missing(method, *args)
+method_missing	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	    def method_missing(symbol, *args)
 methodize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function methodize()
 min	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function min(iterator, context)
+min_priority	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
+missing_callback	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	      def missing_callback(event)
+name	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def name
+name	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/shared_spec.rb	    it "should be the class name 
+name	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def name
+name=	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def name=(val)
+name_prefix	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    attr_accessor :name_prefix
 new	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/suggestions_controller.rb	  def new
+new	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def new
 observe	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
 parseColor	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/effects.js	function parseColor(color)
 parseJSON	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function parseJSON()
 partition	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function partition(iterator, context)
+payload_object	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def payload_object
+payload_object=	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def payload_object=(object)
+perform	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def perform
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	    def perform
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	    def perform
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/clazz.rb	    def perform
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/struct.rb	    def perform
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    def perform; 
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def perform
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def perform; 
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def perform; 
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def perform; 
+perform	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def perform; 
 pluck	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function pluck(property)
+plugins	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :plugins
 pointer	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function pointer(event)
 pointerX	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function pointerX(event)
 pointerY	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function pointerY(event)
 pollDoScroll	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function pollDoScroll()
 positionedOffset	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function positionedOffset(element)
 prepareReplacement	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function prepareReplacement(replacement)
+priority	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :priority
+private_method	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/performable_method_spec.rb	      def private_method
 purgeElement	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function purgeElement(element)
+queue	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :queue
+queues	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
+rails_env	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/recipes.rb	    def rails_env
 readonly?	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  def readonly?
 reject	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function reject(iterator, context)
 relativize	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function relativize(element)
+reload	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def reload
+reschedule	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def reschedule(job, time = nil)
+reschedule_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def reschedule_at
+reschedule_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def reschedule_at(time, attempts); 
+reserve	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	        def reserve(worker, max_run_time = Worker.max_run_time)
+reserve_and_run_one_job	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def reserve_and_run_one_job
+reset	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def reset
 resolve	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function resolve()
 resolveFunc	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function resolveFunc( i )
+respond_to?	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_method.rb	    def respond_to?(symbol, include_private=false)
 returnFalse	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function returnFalse()
 returnTrue	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function returnTrue()
 reverse	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function reverse(inline)
+roles	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/recipes.rb	    def roles
 root	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function root( elem, cur )
 round	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function round()
+run	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	    def run(worker_name = nil)
+run	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def run(job)
+run_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        attr_accessor :run_at
+run_callbacks	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	    def run_callbacks(event, *args, &block)
+run_process	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	    def run_process(process_name, dir)
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+runs	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+save	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def save
+save!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def save!; 
+say	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def say(text, level = Logger::INFO)
 scan	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function scan(pattern, iterator)
+scrape	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def scrape
 select	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function select()
 select	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function select(selector, scope)
+self	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
+self	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+self	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+self	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
+send_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    def send_at(time, method, *args)
+send_later	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    def send_later(method, *args)
 set	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function set(key, value)
+set_default_run_at	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def set_default_run_at
 setup	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def setup
+show	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/flights_controller.rb	  def show
+signup	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/performable_mailer_spec.rb	  def signup(email)
 size	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function size()
 size	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function size()
+sleep_delay	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    cattr_accessor :min_priority, :max_priority, :max_attempts, :max_run_time, :default_priority, :sleep_delay, :logger, :delay_jobs, :queues
 sortBy	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function sortBy(iterator, context)
+spin	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	          def spin
+start	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def start
 startsWith	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function startsWith(pattern)
 stop	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function stop(event)
+stop	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def stop
 stopObserving	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function stopObserving(element, eventName, handler)
 stringify	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function stringify(object)
 strip	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function strip()
@@ -245,7 +482,12 @@ sub	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	fun
 subclass	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function subclass()
 succ	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function succ()
 succ	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function succ()
+success	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  def success(job)
 t	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function t( gotoEnd )
+tell	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	        def tell
+tell	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	      def tell
+tell	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/spec_helper.rb	  def tell; 
+tell!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	      def tell!(arg)
 testChange	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function testChange( e )
 test_auto_complete_field	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def test_auto_complete_field
 test_auto_complete_result	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	  def test_auto_complete_result
@@ -268,26 +510,40 @@ toQueryPair	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototyp
 toQueryParams	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function toQueryParams(separator)
 toQueryString	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function toQueryString()
 toQueryString	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function toQueryString(object)
+to_yaml	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	  def to_yaml( opts = {} )
+to_yaml_properties	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/serialization/active_record.rb	  def to_yaml_properties
 trigger	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function trigger( type, elem, args )
 truncate	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function truncate(length, truncation)
 underscore	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function underscore()
 unescapeHTML	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function unescapeHTML()
 unfilterJSON	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function unfilterJSON(filter)
 uniq	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function uniq(sorted)
+unlock	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	      def unlock
 unset	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function unset(key)
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725050904_create_suggestions.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725055421_create_flights.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_origin_index.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	  def self.up
+up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	  def self.up
+up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	  def self.up
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(array, args)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(element, content)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(object)
+update_attributes	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def update_attributes(attrs = {})
 url_for	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/auto_complete/test/auto_complete_test.rb	      def url_for(options)
 values	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function values()
 values	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function values(object)
 viewportOffset	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function viewportOffset(forElement)
+whatever	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/spec_helper.rb	  def whatever(n, _); 
 winnow	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/jquery-1.6.2.js	function winnow( elements, qualifier, keep )
 without	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function without()
+work_off	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/backend/base.rb	        def work_off(num = 100)
+work_off	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def work_off(num = 100)
+worker_count	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	    attr_accessor :worker_count
 wrap	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function wrap(wrapper)
+yaml_new	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/serialization/active_record.rb	  def self.yaml_new(klass, tag, val)
+yaml_new	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	  def self.yaml_new(klass, tag, val)
+yaml_tag_read_class	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	  def self.yaml_tag_read_class(name)
+yaml_tag_read_class	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/yaml_ext.rb	  def yaml_tag_read_class(name)
 zip	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function zip()

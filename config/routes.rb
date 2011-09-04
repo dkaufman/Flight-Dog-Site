@@ -1,15 +1,19 @@
 FlightDog::Application.routes.draw do
 
   get "suggestions/new"
-  get 'pages/autocomplete_flight_origin'
+  
 
   resources :suggestions, :only => [:new, :create]
   resources :flights
+  
 
   match '/home', :to => 'pages#home'
   match 'about', :to => 'pages#about'
   match 'help', :to => 'pages#help'
-  match '/contact', :to => 'suggestions#new'  
+  match '/contact', :to => 'suggestions#new'
+  match '/flights/list', :to => 'flights#list'
+  match '/test', :to => 'pages#test'
+  match '/scrape', :to => 'pages#scrape'
   
   
   root :to => "pages#home"

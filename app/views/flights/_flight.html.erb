@@ -1,10 +1,8 @@
 
 <tr class="flights">
-    <td><%= flight.observationDate %></td>
     <td><%= flight.flightDate %></td>
-    <td><%= flight.departs %></td>
+    <td><%= flight.departs.strftime("%H:%M") %></td>
     <td><%= flight.origin %></td>
     <td><%= flight.destination %></td>
-    <td><strong>$<%= flight.price %></strong></td>
+    <td><%= link_to 'History', flight_path(flight) %></td>
   </tr>
-

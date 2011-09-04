@@ -6,13 +6,11 @@
 
 
 
-
-                    -Review Living Social's Website
-                    -Review Job Description(s)
-                    -Look up information on the people you might be talking to
-                    -Review your data exercise
-                    -Review any past notes
-                    -Review resume
-                    -AB Splits, AB Testing
--Think of Questions
-                    -Z-score
+Options for Predicting Price
+  Export gbm tree, code each tree individually in Ruby
+  Rewrite gbm for Ruby
+  Explore using cloudnumbers further
+  Use different learning algorithm from AI4R gem
+  
+  
+  Really only need 
