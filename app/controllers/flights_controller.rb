@@ -2,12 +2,7 @@ class FlightsController < ApplicationController
   
   def index
     @title = "Search Flights"
-    flightDate = Date.strptime(params[:flightDate], fmt='%m/%d/%Y')
-    @flights = Flight.find(:all, :conditions => { :origin => params[:origin],
-                                                :destination => params[:destination],
-                                                :flightDate => flightDate
-                                                #:airline => params[:airline]
-                                                  }, :group => 'departs')
+    flightDate = Date.strptime(params[:flightDate], fmt='%m/%d/%Y')    
                                                   
     @flights = Flight.find_by_sql(" SELECT DISTINCT flightDate, departs, origin, destination FROM flights
                                     WHERE flightDate = '#{flightDate}'
