@@ -481,11 +481,19 @@ private
 		  #AirTran appears to have a bug where it sometimes adds 12 hours to an afternoon departure
 		  #This block corrects that error
 		  for i in (0..j)
-			departs_array[i] = departs_array[i].to_i
+			  departs_array[i] = departs_array[i].to_i
 		  	if departs_array[i] >= 2400
-				departs_array[i] -= 1200
-			end
+				  departs_array[i] -= 1200
+			  end
 		  end
+      
+      for i in (0..j)
+        if departs_array[i] < 1000
+          departs_array[i] = "0"+departs_array[i].to_s
+        else
+          departs_array[i] = departs_array[i].to_s
+        end
+      end
 
 		  arrives_array = printable_results.search(":nth-child(3) .sortkey").map(&:text).map(&:strip)
 		  duration_array = printable_results.search("td:nth-child(4) .sortkey").map(&:text).map(&:strip)
@@ -530,7 +538,8 @@ private
 		  output = Array.new
 		  for i in (0..j)
         if nonstop_array[i].to_s == "nonstop"
-			    Flight.create(:airline => "AT", :observationDate => Time.now.ctime, :flightDate => @date_array[i], :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flightNumber => @flight_array[i], :departs => (departs_array[i].to_s), :arrives => arrives_array[i], :duration => duration_array[i], :seats => cleaned_seats_array[i])
+			    Flight.create(:airline => "AT", :observationDate => Time.now.ctime, :flightDate => @date_array[i], :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flightNumber => @flight_array[i], :departs => ((departs_array[i])[0..1]+":"+(departs_array[i])[2..3]), :arrives => (arrives_array[i][0..1]+":"+arrives_array[i][2..3]), :duration => duration_array[i], :seats => cleaned_seats_array[i])
+  		    #Flight.create(:airline => "AT", :observationDate => Time.now.ctime, :flightDate => @date_array[i], :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flightNumber => @flight_array[i], :departs => departs_array[i].to_s, :arrives => (arrives_array[i][0..1]+":"+arrives_array[i][2..3]), :duration => duration_array[i], :seats => cleaned_seats_array[i])
         end
       end
 	end   

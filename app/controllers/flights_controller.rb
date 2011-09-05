@@ -7,7 +7,8 @@ class FlightsController < ApplicationController
                                                 :destination => params[:destination],
                                                 :flightDate => flightDate
                                                 #:airline => params[:airline]
-                                                  }, :group => 'departs')
+                                                  })
+                                                      
                                                   
   end
   
@@ -25,16 +26,6 @@ class FlightsController < ApplicationController
       @series << "[#{f.observationDate.to_i*1000},#{f.price}],"
     end
     @series.chop
-  end
-    
-  
-  def list
-    list = []
-    flights = Flight.where("airline like ?", "%#{params[:term]}%").limit(10)
-    flights.each { |flight| list << { "label" => flight.airline } }
-    
-    respond_to do |format|
-      format.json { render :json => list.to_json, :layout => false }
-    end
   end  
+  
 end
