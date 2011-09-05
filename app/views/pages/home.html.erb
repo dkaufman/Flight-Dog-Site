@@ -4,7 +4,7 @@
 
 <script>
 	$(function() {
-		$( "#flightDate" ).datepicker({ minDate: -200, maxDate: "+1M +10D", showOn: "button",
+		$( "#flight_date" ).datepicker({ minDate: -200, maxDate: "+1M +10D", showOn: "button",
 			buttonImage: "images/calendar.gif",
 			buttonImageOnly: true });
 	});
@@ -20,7 +20,7 @@
   <%= label_tag 'destination' %>
   <%= select_tag(:destination, options_for_select([["Boston", "BOS"],["Baltimore", "BWI"]]))%><br />
   <%= label_tag 'date' %>
-  <%= text_field_tag(:flightDate) %><br />
+  <%= text_field_tag(:flight_date) %><br />
   <%= submit_tag "Fetch", :name => nil %>
   
 </p>

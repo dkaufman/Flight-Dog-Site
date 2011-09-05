@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110904221754) do
+ActiveRecord::Schema.define(:version => 20110905173326) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -26,12 +26,12 @@ ActiveRecord::Schema.define(:version => 20110904221754) do
   end
 
   create_table "flights", :force => true do |t|
-    t.datetime "observationDate"
-    t.date     "flightDate"
+    t.datetime "observation_date"
+    t.date     "flight_date"
     t.string   "origin"
     t.string   "destination"
     t.float    "price"
-    t.string   "flightNumber"
+    t.string   "flight_number"
     t.time     "departs"
     t.time     "arrives"
     t.integer  "duration"

@@ -3,12 +3,12 @@
 # Table name: flights
 #
 #  id              :integer         not null, primary key
-#  observationDate :datetime
-#  flightDate      :date
+#  observation_date :datetime
+#  flight_date      :date
 #  origin          :string(255)
 #  destination     :string(255)
 #  price           :float
-#  flightNumber    :string(255)
+#  flight_number    :string(255)
 #  departs         :time
 #  arrives         :time
 #  duration        :integer
@@ -19,7 +19,7 @@
 
 class Flight < ActiveRecord::Base
   
-  attr_accessible  :id, :observationDate, :flightDate, :origin, :destination, :price, :flightNumber,
+  attr_accessible  :id, :observation_date, :flight_date, :origin, :destination, :price, :flight_number,
                   :departs, :arrives, :duration, :seats, :created_at, :updated_at, :airline
   
   AIRPORTS = ["BOS", "BWI"]

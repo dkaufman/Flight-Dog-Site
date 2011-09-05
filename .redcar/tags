@@ -1,4 +1,4 @@
-1315243549
+1315244784
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
@@ -31,6 +31,7 @@ ClassMethods	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job
 ClassMethods	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/message_sending.rb	    module ClassMethods
 Clazz	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/autoloaded/clazz.rb	  class Clazz
 ClearLocks	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugins/clear_locks.rb	    class ClearLocks 
+ColumnsToLowercase	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905173326_columns_to_lowercase.rb	class ColumnsToLowercase 
 Command	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/command.rb	  class Command
 CommentTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/comment_test.rb	class CommentTest 
 CommentsControllerTest	/Users/Daniel/Documents/Sites/flight_dog/test/functional/comments_controller_test.rb	class CommentsControllerTest 
@@ -214,6 +215,7 @@ down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725233242_add_orig
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	  def self.down
+down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905173326_columns_to_lowercase.rb	  def self.down
 each	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function each(iterator)
 each	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -520,6 +522,7 @@ up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_a
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	  def self.up
+up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905173326_columns_to_lowercase.rb	  def self.up
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(array, args)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(element, content)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(object)

@@ -404,7 +404,7 @@ private
 		  output = Array.new
 		  j = flights_array.length - 1
 		  for i in (0..j)
-					Flight.create(:airline => "JB", :observationDate => Time.now.ctime, :flightDate => @date, :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flightNumber => flights_array[i], :departs => cleaned_departs_array[i], :arrives => cleaned_arrives_array[i], :seats => cleaned_seats_array[i])
+					Flight.create(:airline => "JB", :observation_date => Time.now.ctime, :flight_date => @date, :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flight_number => flights_array[i], :departs => cleaned_departs_array[i], :arrives => cleaned_arrives_array[i], :seats => cleaned_seats_array[i])
  		  end
 	end
   
@@ -538,8 +538,7 @@ private
 		  output = Array.new
 		  for i in (0..j)
         if nonstop_array[i].to_s == "nonstop"
-			    Flight.create(:airline => "AT", :observationDate => Time.now.ctime, :flightDate => @date_array[i], :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flightNumber => @flight_array[i], :departs => ((departs_array[i])[0..1]+":"+(departs_array[i])[2..3]), :arrives => (arrives_array[i][0..1]+":"+arrives_array[i][2..3]), :duration => duration_array[i], :seats => cleaned_seats_array[i])
-  		    #Flight.create(:airline => "AT", :observationDate => Time.now.ctime, :flightDate => @date_array[i], :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flightNumber => @flight_array[i], :departs => departs_array[i].to_s, :arrives => (arrives_array[i][0..1]+":"+arrives_array[i][2..3]), :duration => duration_array[i], :seats => cleaned_seats_array[i])
+			    Flight.create(:airline => "AT", :observation_date => Time.now.ctime, :flight_date => @date_array[i], :origin => @fromCity, :destination => @toCity, :price => price_array[i], :flight_number => @flight_array[i], :departs => ((departs_array[i])[0..1]+":"+(departs_array[i])[2..3]), :arrives => (arrives_array[i][0..1]+":"+arrives_array[i][2..3]), :duration => duration_array[i], :seats => cleaned_seats_array[i])
         end
       end
 	end   

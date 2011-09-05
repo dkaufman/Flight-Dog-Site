@@ -1,11 +1,11 @@
 <% referenceFlight = Flight.find(:first, :conditions => { :origin => flight.origin,
                                                           :departs => flight.departs,
                                                           :destination => flight.destination,
-                                                          :flightDate => flight.flightDate
+                                                          :flight_date => flight.flight_date
                                                 #:airline => params[:airline]
                                                         }) %>
 <tr class="flights">
-    <td><%= referenceFlight.flightDate %></td>
+    <td><%= referenceFlight.flight_date %></td>
     <td><%= referenceFlight.departs.strftime("%H:%M") %></td>
     <td><%= referenceFlight.origin %></td>
     <td><%= referenceFlight.destination %></td>
