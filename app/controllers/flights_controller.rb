@@ -7,9 +7,11 @@ class FlightsController < ApplicationController
                                                 :destination => params[:destination],
                                                 :flightDate => flightDate
                                                 #:airline => params[:airline]
-                                                  })
-                                                      
+                                                  }, :group => 'departs')
                                                   
+    @flights = Flight.find_by_sql(" SELECT DISTINCT flightDate, departs, origin, destination FROM flights
+                                    WHERE flightDate = '#{flightDate}'
+                                    AND origin = '#{params[:origin]}' AND destination = '#{params[:destination]}'")                                                  
   end
   
   def show
