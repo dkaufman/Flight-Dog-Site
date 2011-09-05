@@ -4,7 +4,8 @@ class FlightsController < ApplicationController
     @title = "Search Flights"
     flightDate = Date.strptime(params[:flightDate], fmt='%m/%d/%Y')    
                                                   
-    @flights = Flight.find_by_sql(" SELECT DISTINCT flightDate, departs, origin, destination FROM flights
+    @flights = Flight.find_by_sql(" SELECT DISTINCT flights.flightDate, flights.departs, 
+                                    flights.origin, flights.destination FROM flights
                                     WHERE flightDate = '#{flightDate}'
                                     AND origin = '#{params[:origin]}' AND destination = '#{params[:destination]}'")                                                  
   end
