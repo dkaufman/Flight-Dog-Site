@@ -12,6 +12,8 @@ gem 'will_paginate'
 gem 'rails3-jquery-autocomplete'
 gem 'mechanize'
 gem 'nokogiri'
+gem 'delayed_job'
+gem 'hirefire'
 #gem 'rsruby'
 # Use unicorn as the web server
 # gem 'unicorn'

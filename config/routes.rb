@@ -5,6 +5,7 @@ FlightDog::Application.routes.draw do
 
   resources :suggestions, :only => [:new, :create]
   resources :flights
+  resources :scrapes
   
 
   match '/home', :to => 'pages#home'
@@ -13,7 +14,7 @@ FlightDog::Application.routes.draw do
   match '/contact', :to => 'suggestions#new'
   match '/flights/list', :to => 'flights#list'
   match '/test', :to => 'pages#test'
-  match '/scrape', :to => 'pages#scrape'
+  match '/scrape', :to => 'scrapes#create'
   
   
   root :to => "pages#home"

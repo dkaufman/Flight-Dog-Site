@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110905173326) do
+ActiveRecord::Schema.define(:version => 20110905181616) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -46,6 +46,11 @@ ActiveRecord::Schema.define(:version => 20110905173326) do
   end
 
   add_index "flights", ["origin"], :name => "index_flights_on_origin"
+
+  create_table "scrapes", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "suggestions", :force => true do |t|
     t.string   "email"

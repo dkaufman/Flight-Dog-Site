@@ -1,12 +1,12 @@
-1315245268
+1315255920
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 AIRPORTS	/Users/Daniel/Documents/Sites/flight_dog/app/models/flight.rb	  AIRPORTS =
-ATCollect	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def ATCollect(day, month, fromCity, toCity)
+ATCollect	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	  def self.ATCollect(day, month, fromCity, toCity)
 ATCollect	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def ATCollect(day, month, fromCity, toCity)
-ATController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def ATController
+ATController	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	  def self.ATController
 ATController	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def ATController
 AddAirlineAttribute	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	class AddAirlineAttribute 
 AddDateAndTimeToFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date_and_time_to_flights.rb	class AddDateAndTimeToFlights 
@@ -39,6 +39,7 @@ CommentsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/comments_hel
 CommentsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/comments_helper_test.rb	class CommentsHelperTest 
 CreateDelayedJobs	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	class CreateDelayedJobs 
 CreateFlights	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725055421_create_flights.rb	class CreateFlights 
+CreateScrapes	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905181616_create_scrapes.rb	class CreateScrapes 
 CreateSuggestions	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110725050904_create_suggestions.rb	class CreateSuggestions 
 CustomRescheduleJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class CustomRescheduleJob 
 DelayMail	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/performable_mailer.rb	  module DelayMail
@@ -71,9 +72,9 @@ FlightsHelper	/Users/Daniel/Documents/Sites/flight_dog/app/helpers/flights_helpe
 FlightsHelperTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/helpers/flights_helper_test.rb	class FlightsHelperTest 
 InitR	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/application_controller.rb	  def InitR
 InvalidCallback	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	  class InvalidCallback 
-JBCollect	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def JBCollect(date, fromCity, toCity)
+JBCollect	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	  def self.JBCollect(date, fromCity, toCity)
 JBCollect	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def JBCollect(date, fromCity, toCity)
-JBController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def JBController
+JBController	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	  def self.JBController
 JBController	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	  def JBController
 Job	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	      class Job
 Lifecycle	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/lifecycle.rb	  class Lifecycle
@@ -96,7 +97,10 @@ Plugin	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/d
 Plugins	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugins/clear_locks.rb	  module Plugins
 Railtie	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/railtie.rb	  class Railtie 
 RemoveCommentsTable	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	class RemoveCommentsTable 
+Scrape	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	class Scrape 
 ScrapeJob	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	class ScrapeJob 
+ScrapeTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/scrape_test.rb	class ScrapeTest 
+ScrapesController	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/scrapes_controller.rb	class ScrapesController 
 SimpleJob	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	class SimpleJob
 Story	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/message_sending_spec.rb	    class Story
 Story	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/spec_helper.rb	class Story 
@@ -170,6 +174,7 @@ concat	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	
 contact	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def contact
 copy	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 count	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.count 
+create	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/scrapes_controller.rb	  def create
 create	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/suggestions_controller.rb	  def create
 create	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function create()
 create	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def self.create(attrs = {})
@@ -216,6 +221,7 @@ down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110726044542_add_date
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	  def self.down
 down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905173326_columns_to_lowercase.rb	  def self.down
+down	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905181616_create_scrapes.rb	  def self.down
 each	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function each(iterator)
 each	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -304,7 +310,7 @@ initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/l
 initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/plugin.rb	    def initialize
 initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def initialize(options={})
 initialize	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def initialize(hash = {})
-initiate	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def initiate
+initiate	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	  def self.initiate
 inject	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inject(memo, iterator, context)
 inspect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inspect()
 inspect	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function inspect()
@@ -444,7 +450,6 @@ save	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/de
 save!	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/delayed/backend/test.rb	        def save!; 
 say	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/worker.rb	    def say(text, level = Logger::INFO)
 scan	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function scan(pattern, iterator)
-scrape	/Users/Daniel/Documents/Sites/flight_dog/app/controllers/pages_controller.rb	  def scrape
 select	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function select()
 select	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function select(selector, scope)
 self	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
@@ -523,6 +528,7 @@ up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_com
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904012214_add_airline_attribute.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110904221754_create_delayed_jobs.rb	  def self.up
 up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905173326_columns_to_lowercase.rb	  def self.up
+up	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110905181616_create_scrapes.rb	  def self.up
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(array, args)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(element, content)
 update	/Users/Daniel/Documents/Sites/flight_dog/public/javascripts/prototype.js	function update(object)
