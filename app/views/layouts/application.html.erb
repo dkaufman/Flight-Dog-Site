@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Flight Dog: <%= @title %> </title>
+		<title> FarePlots: <%= @title %> </title>
 		<%= csrf_meta_tag %>
 		<%= render 'layouts/stylesheets'%>
     <%= javascript_include_tag :defaults %>`
-    <%= javascript_include_tag "jquery-1.6.2", "application", "rails", "highcharts", "jquery-ui-1.8.16.custom.min.js" %>
+    <%= javascript_include_tag "jquery-1.6.2", "application", "rails", "highcharts", "jquery-ui-1.8.16.custom.min.js", "raphael-min.js", "g.raphael-min.js", "g.line-min.js" %>
     <%= stylesheet_link_tag 'cupertino/jquery-ui-1.8.16.custom.css' %>
 	</head>
 	<body>

@@ -1,16 +1,5 @@
-- Autocomplete search fields
-- Configure Cron to Perform Search
-- Database Browser for Heroku?
-- Do I want to pay for Heroku? Engine Yard?
-- Display Search details on index page
-
-
-
-Options for Predicting Price
-  Export gbm tree, code each tree individually in Ruby
-  Rewrite gbm for Ruby
-  Explore using cloudnumbers further
-  Use different learning algorithm from AI4R gem
-  
-  
-  Really only need 
+-Replace HighCharts
+-Upload Database
+-Google Analytics
+-Orbitz Link
+-Google Adwords

@@ -5,9 +5,11 @@ class FlightsController < ApplicationController
     flight_date = Date.strptime(params[:flight_date], fmt='%m/%d/%Y')    
                                                   
     @flights = Flight.find_by_sql(" SELECT DISTINCT flights.flight_date, flights.departs, 
-                                    flights.origin, flights.destination FROM flights
+                                    flights.origin, flights.destination, flights.airline FROM flights
                                     WHERE flight_date = '#{flight_date}'
-                                    AND origin = '#{params[:origin]}' AND destination = '#{params[:destination]}'")                                                  
+                                    AND origin = '#{params[:origin]}' 
+                                    AND destination = '#{params[:destination]}'
+                                    AND airline = '#{params[:airline]}'")                                                  
   end
   
   def show
@@ -17,7 +19,8 @@ class FlightsController < ApplicationController
     @flights = Flight.find(:all, :conditions => { :origin => referenceFlight.origin,
                                                 :destination => referenceFlight.destination,
                                                 :flight_date => referenceFlight.flight_date,
-                                                :departs => referenceFlight.departs
+                                                :departs => referenceFlight.departs,
+                                                :airline => referenceFlight.airline
                                                   })
     @series = ""  
     @flights.each do |f|

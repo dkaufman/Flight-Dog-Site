@@ -3,7 +3,7 @@ class Scrape < ActiveRecord::Base
     
   def self.initiate
     ATController()
-    #JBController()
+    JBController()
   end
   
   private
@@ -51,29 +51,29 @@ class Scrape < ActiveRecord::Base
     	#Each route (one-way) requires its own line
     	puts "Scraping BOS for " + flightDay.to_s + " " + flightMonth.to_s
     	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "BWI")
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BOS", "MKE").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BOS", "ATL").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BOS", "MCO").scrape
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MKE")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "ATL")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MCO")
     	puts "Scraping BWI for " + flightDay.to_s + " " + flightMonth.to_s
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BWI", "BOS").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BWI", "MKE").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BWI", "ATL").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "BWI", "MCO").scrape
-    	#puts "Scraping MKE for " + flightDay.to_s + " " + flightMonth.to_s
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MKE", "BOS").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MKE", "BWI").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MKE", "ATL").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MKE", "MCO").scrape
-    	#puts "Scraping ATL for " + flightDay.to_s + " " + flightMonth.to_s
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "ATL", "BOS").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "ATL", "BWI").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "ATL", "MKE").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "ATL", "MCO").scrape
-    	#puts "Scraping MCO for " + flightDay.to_s + " " + flightMonth.to_s
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MCO", "BOS").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MCO", "BWI").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MCO", "ATL").scrape
-    	#ATCollect.new(flightDay.to_s, flightMonth.to_s, "MCO", "MKE").scrape
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "BOS")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MKE")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "ATL")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MCO")
+    	puts "Scraping MKE for " + flightDay.to_s + " " + flightMonth.to_s
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BOS")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BWI")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "ATL")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "MCO")
+    	puts "Scraping ATL for " + flightDay.to_s + " " + flightMonth.to_s
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BOS")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BWI")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MKE")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MCO")
+    	puts "Scraping MCO for " + flightDay.to_s + " " + flightMonth.to_s
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BOS")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BWI")
+    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "ATL")
+      ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "MKE")
     end
   end
   
@@ -127,25 +127,25 @@ class Scrape < ActiveRecord::Base
     end
 
     begin
-    	#JBCollect.new(formattedFlightDate, "BOS", "LGB").scrape
+    	JBCollect(formattedFlightDate, "BOS", "LGB")
     rescue
     		puts "***Failed to collect BOS to LGB for " + formattedFlightDate
     end
     
     begin
-    	#JBCollect.new(formattedFlightDate, "BOS", "MCO").scrape
+    	JBCollect(formattedFlightDate, "BOS", "MCO")
     rescue
     		puts "***Failed to collect BOS to MCO for " + formattedFlightDate
     end
       
     begin
-    	#JBCollect.new(formattedFlightDate, "BOS", "FLL").scrape
+    	JBCollect(formattedFlightDate, "BOS", "FLL")
     rescue
     		puts "***Failed to collect BOS to FLL for " + formattedFlightDate
     end
     
     begin
-    	#JBCollect.new(formattedFlightDate, "BOS", "NYC").scrape
+    	JBCollect(formattedFlightDate, "BOS", "NYC")
     rescue
     		puts "***Failed to collect BOS to NYC for " + formattedFlightDate
     end
@@ -153,31 +153,31 @@ class Scrape < ActiveRecord::Base
     
     puts "Scraping BWI for " + formattedFlightDate
     begin
-    	#JBCollect.new(formattedFlightDate, "BWI", "BOS").scrape
+    	JBCollect(formattedFlightDate, "BWI", "BOS")
     rescue
     		puts "***Failed to collect BWI to BOS for " + formattedFlightDate
     end
     
     begin
-    	#JBCollect.new(formattedFlightDate, "BWI", "LGB").scrape
+    	JBCollect(formattedFlightDate, "BWI", "LGB")
     rescue
     		puts "***Failed to collect BWI to LGB for " + formattedFlightDate
     end
     
     begin
-    	#JBCollect.new(formattedFlightDate, "BWI", "MCO").scrape
+    	JBCollect(formattedFlightDate, "BWI", "MCO")
     rescue
     		puts "***Failed to collect BWI to MCO for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "BWI", "FLL").scrape
+    	JBCollect(formattedFlightDate, "BWI", "FLL")
     rescue
     		puts "***Failed to collect BWI to FLL for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "BWI", "NYC").scrape
+    	JBCollect(formattedFlightDate, "BWI", "NYC")
     rescue
     		puts "***Failed to collect BWI to NYC for " + formattedFlightDate
     end
@@ -185,31 +185,31 @@ class Scrape < ActiveRecord::Base
     
   	puts "Scraping LGB for " + formattedFlightDate
     begin
-    	#JBCollect.new(formattedFlightDate, "LGB", "BWI").scrape
+    	JBCollect(formattedFlightDate, "LGB", "BWI")
     rescue
     		puts "***Failed to collect LGB to BWI for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "LGB", "BOS").scrape
+    	JBCollect(formattedFlightDate, "LGB", "BOS")
     rescue
     		puts "***Failed to collect LGB to BOS for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "LGB", "MCO").scrape
+    	JBCollect(formattedFlightDate, "LGB", "MCO")
     rescue
     		puts "***Failed to collect LGB to MCO for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "LGB", "FLL").scrape
+    	JBCollect(formattedFlightDate, "LGB", "FLL")
     rescue
     		puts "***Failed to collect LGB to FLL for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "LGB", "NYC").scrape
+    	JBCollect(formattedFlightDate, "LGB", "NYC")
     rescue
     		puts "***Failed to collect LGB to NYC for " + formattedFlightDate
     end
@@ -218,31 +218,31 @@ class Scrape < ActiveRecord::Base
     
     puts "Scraping MCO for " + formattedFlightDate
     begin
-    	#JBCollect.new(formattedFlightDate, "MCO", "BWI").scrape
+    	JBCollect(formattedFlightDate, "MCO", "BWI")
     rescue
     		puts "***Failed to collect MCO to BWI for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "MCO", "LGB").scrape
+    	JBCollect(formattedFlightDate, "MCO", "LGB")
     rescue
     		puts "***Failed to collect MCO to LGB for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "MCO", "BOS").scrape
+    	JBCollect(formattedFlightDate, "MCO", "BOS")
     rescue
     		puts "***Failed to collect MCO to BOS for " + formattedFlightDate
     end
 
     begin
-    	#JBCollect.new(formattedFlightDate, "MCO", "FLL").scrape
+    	JBCollect(formattedFlightDate, "MCO", "FLL")
     rescue
     		puts "***Failed to collect MCO to FLL for " + formattedFlightDate
-      end
+    end
 
     begin
-    	#JBCollect.new(formattedFlightDate, "MCO", "NYC").scrape
+    	JBCollect(formattedFlightDate, "MCO", "NYC")
     rescue
     		puts "***Failed to collect MCO to NYC for " + formattedFlightDate
     end
@@ -251,62 +251,62 @@ class Scrape < ActiveRecord::Base
     
   	puts "Scraping FLL for " + formattedFlightDate
     begin
-    	#JBCollect.new(formattedFlightDate, "FLL", "BWI").scrape
+    	JBCollect(formattedFlightDate, "FLL", "BWI")
     rescue
     		puts "***Failed to collect FLL to BWI for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "FLL", "LGB").scrape
+    	JBCollect(formattedFlightDate, "FLL", "LGB")
     rescue
     		puts "***Failed to collect FLL to LGB for " + formattedFlightDate
     end
 
     begin
-    	#JBCollect.new(formattedFlightDate, "FLL", "MCO").scrape
+    	JBCollect(formattedFlightDate, "FLL", "MCO")
     rescue
     		puts "***Failed to collect FLL to MCO for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "FLL", "BOS").scrape
+    	JBCollect(formattedFlightDate, "FLL", "BOS")
     rescue
     		puts "***Failed to collect FLL to BOS for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "FLL", "NYC").scrape
+    	JBCollect(formattedFlightDate, "FLL", "NYC")
     rescue
     		puts "***Failed to collect FLL to NYC for " + formattedFlightDate
     end
 
   	puts "Scraping NYC for " + formattedFlightDate
     begin
-    	#JBCollect.new(formattedFlightDate, "NYC", "BWI").scrape
+    	JBCollect(formattedFlightDate, "NYC", "BWI")
     rescue
     		puts "***Failed to collect NYC to BWI for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "NYC", "LGB").scrape
+    	JBCollect(formattedFlightDate, "NYC", "LGB")
     rescue
     		puts "***Failed to collect NYC to LGB for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "NYC", "MCO").scrape
+    	JBCollect(formattedFlightDate, "NYC", "MCO")
     rescue
     		puts "***Failed to collect NYC to MCO for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "NYC", "FLL").scrape
+    	JBCollect(formattedFlightDate, "NYC", "FLL")
     rescue
     		puts "***Failed to collect NYC to FLL for " + formattedFlightDate
     end
   
     begin
-    	#JBCollect.new(formattedFlightDate, "NYC", "BOS").scrape
+    	JBCollect(formattedFlightDate, "NYC", "BOS")
     rescue
     		puts "***Failed to collect NYC to BOS for " + formattedFlightDate
     end
