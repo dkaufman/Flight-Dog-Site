@@ -3,7 +3,7 @@ class Scrape < ActiveRecord::Base
     
   def self.initiate
     ATController()
-    JBController()
+    #JBController()
   end
   
   private
@@ -51,29 +51,29 @@ class Scrape < ActiveRecord::Base
     	#Each route (one-way) requires its own line
     	puts "Scraping BOS for " + flightDay.to_s + " " + flightMonth.to_s
     	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MKE")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "ATL")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MCO")
-    	puts "Scraping BWI for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MKE")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "ATL")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MCO")
-    	puts "Scraping MKE for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "ATL")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "MCO")
-    	puts "Scraping ATL for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MKE")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MCO")
-    	puts "Scraping MCO for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "ATL")
-      ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "MKE")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MKE")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "ATL")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MCO")
+    	#puts "Scraping BWI for " + flightDay.to_s + " " + flightMonth.to_s
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "BOS")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MKE")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "ATL")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MCO")
+    	#puts "Scraping MKE for " + flightDay.to_s + " " + flightMonth.to_s
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BOS")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BWI")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "ATL")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "MCO")
+    	#puts "Scraping ATL for " + flightDay.to_s + " " + flightMonth.to_s
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BOS")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BWI")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MKE")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MCO")
+    	#puts "Scraping MCO for " + flightDay.to_s + " " + flightMonth.to_s
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BOS")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BWI")
+    	#ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "ATL")
+      #ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "MKE")
     end
   end
   
