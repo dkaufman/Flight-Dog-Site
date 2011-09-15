@@ -46,7 +46,8 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     fattr (2.2.0)
-    heroku (2.6.1)
+    googlecharts (1.6.7)
+    heroku (2.7.0)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       rubyzip
@@ -120,6 +121,7 @@ DEPENDENCIES
   annotate
   calendar_date_select!
   delayed_job
+  googlecharts
   hirefire
   mechanize
   nokogiri

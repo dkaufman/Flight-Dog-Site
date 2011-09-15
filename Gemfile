@@ -14,6 +14,7 @@ gem 'mechanize'
 gem 'nokogiri'
 gem 'delayed_job'
 gem 'hirefire'
+gem 'googlecharts'
 #gem 'rsruby'
 # Use unicorn as the web server
 # gem 'unicorn'
