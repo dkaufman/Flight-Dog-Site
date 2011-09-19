@@ -1,20 +1,29 @@
-<div id="flights_chart" style="width: 560px; height: 300px;"></div>
-<script type="text/javascript" charset="utf-8"> 
-$(function () {  
-  new Highcharts.Chart({  
-    chart: { renderTo: 'flights_chart' },  
-    title: { text: 'FlightDog\'s Observations' },
-    xAxis: {type: "datetime",
-            title: { text: "Observation Date"}},
-    yAxis: {title: { text: "Price"}},
-    legend: {enabled: false},
-    point: { marker: {enabled: false}},
-    series: [{
-      name: "Price",
-      data: [<%= @series %>],
-      marker: {enabled: false}
-    }]
-  });  
-});  
-</script> 
+<% x = @chartseries[0..(@chartseries.length-2)].to_s %>
+<% y = x[1..13] %>
 
+
+<div id='chart_div'</div>
+  
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Date');
+        data.addColumn('number', 'Price');
+        data.addRows([<%= x %> ]);
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+        chart.draw(data, {curveType : 'none',
+                          lineWidth: 2,
+                          width: 560,
+                          height: 300,
+                          title: 'FarePlot\'s Observations',
+                          vAxis: {format: '$#', title: "Observed Price"},
+                          hAxis: {direction: -1, format: '# Days Ago'},
+                          pointSize: 4,
+                          legend: 'none' });
+      }
+    </script>

@@ -17,9 +17,9 @@
   <%= label_tag 'airline' %>
   <%= select_tag(:airline, options_for_select([["Select Airline", "---"], ["AirTran", "AT"], ["Jet Blue", "JB"]]))%><br />
   <%= label_tag 'origin' %>
-  <%= select_tag(:origin, options_for_select([["Select Origin", "---"], ["Atlanta", "ATL"], ["Boston", "BOS"], ["Baltimore", "BWI"], ["Fort Lauderdale", "FLL"], ["Long Beach", "LGB"], ["Milwaukee", "MKE"], ["New York City", "NYC"], ["Orlando", "MCO"]]))%><br />
+  <%= select_tag(:origin, options_for_select([["Select Origin", "---"], ["Atlanta", "ATL"], ["Boston", "BOS"], ["Baltimore", "BWI"], ["Fort Lauderdale", "FLL"], ["Long Beach", "LGB"], ["Milwaukee", "MKE"], ["Orlando", "MCO"]]))%><br />
   <%= label_tag 'destination' %>
-  <%= select_tag(:destination, options_for_select([["Select Destination", "---"], ["Atlanta", "ATL"], ["Boston", "BOS"], ["Baltimore", "BWI"], ["Fort Lauderdale", "FLL"], ["Long Beach", "LGB"], ["Milwaukee", "MKE"], ["New York City", "NYC"], ["Orlando", "MCO"]]))%><br />
+  <%= select_tag(:destination, options_for_select([["Select Destination", "---"], ["Atlanta", "ATL"], ["Boston", "BOS"], ["Baltimore", "BWI"], ["Fort Lauderdale", "FLL"], ["Long Beach", "LGB"], ["Milwaukee", "MKE"], ["Orlando", "MCO"]]))%><br />
   <%= label_tag 'date' %>
   <%= text_field_tag(:flight_date) %><br />
   <%= submit_tag "Fetch", :name => nil %>

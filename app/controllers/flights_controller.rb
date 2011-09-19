@@ -4,7 +4,7 @@ class FlightsController < ApplicationController
     @title = "Search Flights"
     flight_date = Date.strptime(params[:flight_date], fmt='%m/%d/%Y')    
                                                   
-    @flights = Flight.find_by_sql(" SELECT DISTINCT flights.flight_date, flights.departs, 
+    @flights = Flight.find_by_sql(" SELECT DISTINCT flights.flight_date, flights.flight_number, 
                                     flights.origin, flights.destination, flights.airline FROM flights
                                     WHERE flight_date = '#{flight_date}'
                                     AND origin = '#{params[:origin]}' 
@@ -19,14 +19,13 @@ class FlightsController < ApplicationController
     @flights = Flight.find(:all, :conditions => { :origin => referenceFlight.origin,
                                                 :destination => referenceFlight.destination,
                                                 :flight_date => referenceFlight.flight_date,
-                                                :departs => referenceFlight.departs,
+                                                :flight_number => referenceFlight.flight_number,
                                                 :airline => referenceFlight.airline
                                                   })
-    @series = ""  
+    @chartseries = ""
     @flights.each do |f|
-      @series << "[#{f.observation_date.to_i*1000},#{f.price}],"
+      @chartseries << "[#{((Time.now.to_f - f.observation_date.to_f)/86400).round(2)},#{f.price}],"
     end
-    @series.chop
   end  
   
 end
