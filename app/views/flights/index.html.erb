@@ -1,4 +1,5 @@
- <table>
+<div class = "info round"> 
+<table>
   <% if @flights.length != 0 %>
     <tr class = "heading">
       <td>Flight Date</td><td>Departs</td><td>Origin</td><td>Destination</td>
@@ -6,7 +7,9 @@
     <%= render @flights %>
   <% else %>
   <div class = "info round">
-    There are no flights in our database <br> that match your search criteria.
-  </div>
+    There are no flights in our database that match your search criteria.<br><br>
+    <%= link_to "Why Not?", help_path %>
+  </div>  
   <% end %>
 </table>
+</div>

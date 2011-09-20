@@ -15,12 +15,12 @@ class FlightsController < ApplicationController
   def show
     @title = "Flight History"
     
-    referenceFlight = Flight.find(params[:id])
-    @flights = Flight.find(:all, :conditions => { :origin => referenceFlight.origin,
-                                                :destination => referenceFlight.destination,
-                                                :flight_date => referenceFlight.flight_date,
-                                                :flight_number => referenceFlight.flight_number,
-                                                :airline => referenceFlight.airline
+    @referenceFlight = Flight.find(params[:id])
+    @flights = Flight.find(:all, :conditions => { :origin => @referenceFlight.origin,
+                                                :destination => @referenceFlight.destination,
+                                                :flight_date => @referenceFlight.flight_date,
+                                                :flight_number => @referenceFlight.flight_number,
+                                                :airline => @referenceFlight.airline
                                                   })
     @chartseries = ""
     @flights.each do |f|

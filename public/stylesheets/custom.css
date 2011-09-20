@@ -42,7 +42,7 @@ td.sidebar {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  background: #8BBED6;
+  background: #F0F8FF;
   text-align: center;
   padding: 30px 30px;
   font-size: 130%;
@@ -74,4 +74,21 @@ td.sidebar {
 
 .heading {
   font-size: 110%;
+  color: #8B0000;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 120%;
+}
+
+.question {
+  text-align: left;
+  font-size: 100%;
+  color: #8B0000;
+  white-space: nowrap;
+}
+
+.answer {
+  font-size: 85%;
 }

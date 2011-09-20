@@ -1,5 +1,5 @@
-<div>  
-        Enter your flight information on the right to find the price history for that flight.<br /><br />        <font class="note">Beta Limitations:</font> Only Jet Blue and AirTran hubs for one-way flights within the next month<br /><br />
+<div class = "description">  
+        Enter your flight information on the right to find the price history for that flight.<br /><br />        <font class="note">Please Note:</font> We're just starting out, so for now we only have information for AirTran and Jet Blue flight between some popular destinations. We'll be adding more flights soon!<br /><br />
 </div>
             
 
@@ -22,7 +22,7 @@
   <%= select_tag(:destination, options_for_select([["Select Destination", "---"], ["Atlanta", "ATL"], ["Boston", "BOS"], ["Baltimore", "BWI"], ["Fort Lauderdale", "FLL"], ["Long Beach", "LGB"], ["Milwaukee", "MKE"], ["Orlando", "MCO"]]))%><br />
   <%= label_tag 'date' %>
   <%= text_field_tag(:flight_date) %><br />
-  <%= submit_tag "Fetch", :name => nil %>
+  <%= submit_tag "Search", :name => nil %>
   
 </p>
 <% end %>

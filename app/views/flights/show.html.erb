@@ -16,14 +16,14 @@
         data.addRows([<%= x %> ]);
 
         var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-        chart.draw(data, {curveType : 'none',
-                          lineWidth: 2,
+        chart.draw(data, {lineWidth: 4,
                           width: 560,
                           height: 300,
-                          title: 'FarePlot\'s Observations',
+                          title: 'FarePlot\'s Observations for <%= @referenceFlight.airline %> <%= @referenceFlight.flight_number %> from <%= @referenceFlight.origin %> to <%= @referenceFlight.destination %> at <%= @referenceFlight.departs.strftime("%H:%M") %> on  <%= @referenceFlight.flight_date.strftime('%A, %B %d') %>',
+                          titleTextStyle: {color: '#3366CC', fontSize: '135%'},
                           vAxis: {format: '$#', title: "Observed Price"},
                           hAxis: {direction: -1, format: '# Days Ago'},
-                          pointSize: 4,
+                          pointSize: 0,
                           legend: 'none' });
       }
     </script>

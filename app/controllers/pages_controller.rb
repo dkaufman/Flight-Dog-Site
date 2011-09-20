@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def help
-    @title = "Help"
+    @title = "FAQ"
   end
 
   def contact
