@@ -4,11 +4,118 @@ class Scrape < ActiveRecord::Base
   def self.initiate
     ATController()
     JBController()
+    SWController()
   end
   
   private
   
+  
+  def self.SWController
+    airportArray = ["BOS", "BWI", "MDW", "LAS", "PHX", "DEN", "HOU", "DAL", "LAX", "OAK", "MCO"]
+    j = airportArray.length - 1
+    
+    #Get current Date
+    currentYear = Time.now.year
+    currentMonth = Time.now.month
+    currentDay = Time.now.day
+    leapYear = currentYear%4
+    
+    #Calculate how many days are in the current month
+    if [4,6,9,11].include? currentMonth
+    	daysInMonth = 30
+    elsif currentMonth == 2 && leapYear == 0
+    	daysInMonth = 29
+    elsif currentMonth == 2
+    	daysInmonth = 28
+    else
+    	daysInMonth = 31
+    end
+    
+    #Collect flight data for flights between 6 and 25 days away
+    puts "Started data collection " + Time.now.to_s
+    for i in (6..25)
+    	flightMonth = currentMonth
+    	flightDay = currentDay + i
+    	flightYear = currentYear
+      if flightDay > daysInMonth
+    		flightDay = flightDay - daysInMonth
+    		flightMonth += 1
+      end
+      if flightMonth == 13
+    		flightMonth = 1
+    		flightYear += 1
+      end
+      if flightMonth < 10
+    		flightMonth = "0" + flightMonth.to_s
+      end
+      if flightDay < 10
+    		flightDay = "0" + flightDay.to_s
+      end
+    	formattedFlightDate = flightMonth.to_s + "/" + flightDay.to_s + "/" + flightYear.to_s
+      airportArray.each do |o|
+        airportArray.each do |d|
+          if o != d
+            puts "Collecting Southwest - " + o + " to " + d + " for " + formattedFlightDate
+            begin
+              SWCollect(formattedFlightDate, o, d)
+            rescue
+              puts "***Failed to collect Southwest - " + o + " to " + d + " for " + formattedFlightDate
+            end
+          end
+        end
+      end
+    end      
+end
+
+def self.SWCollect(date, fromCity, toCity)
+  @date = date
+	@fromCity = fromCity
+	@toCity = toCity
+
+  agent = Mechanize.new
+  url = "http://www.southwest.com/flight"
+  homePage = agent.get(url)
+  
+  searchForm = homePage.forms[2]
+  
+  searchForm.radiobutton_with(:id => 'oneWay').check
+  searchForm["originAirport"] = [@fromCity]
+  searchForm["destinationAirport"] = [@toCity]
+  searchForm["outboundDateString"] = [@date]
+  results = agent.submit(searchForm)
+  
+  nonstopArray = results.search(".bugLinkRouting").map(&:text).map(&:strip)
+  departsTimeArray = results.search("td:nth-child(1) .time").map(&:text).map(&:strip)
+  departsAmPmArray = results.search("td:nth-child(1) .indicator").map(&:text).map(&:strip)
+  arrivesTimeArray = results.search("td:nth-child(2) .time").map(&:text).map(&:strip)
+  arrivesAmPmArray = results.search("td:nth-child(2) .indicator").map(&:text).map(&:strip)
+  flightArray = results.search(".bugLinkText").map(&:text).map(&:strip)
+  priceArray = results.search(".price_column:nth-child(8) .product_price").map(&:text).map(&:strip)
+  priceArray = priceArray.map {|x| x[/\d+/]}
+  
+  departsArray = []
+  arrivesArray = []
+  
+  j = departsTimeArray.length - 1
+  
+  for i in (0..j)    
+    departsArray[i] = DateTime.strptime((departsTimeArray[i] + " " + departsAmPmArray[i]), '%I:%M %p')
+    arrivesArray[i] = DateTime.strptime((arrivesTimeArray[i] + " " + arrivesAmPmArray[i]), '%I:%M %p')
+  end
+  
+  
+  j = flightArray.length - 1
+    for i in (0..j)
+      if nonstopArray[i].include? "onstop"
+  		  Flight.create(:airline => "SW", :observation_date => Time.now.ctime, :flight_date => @date, :origin => @fromCity, :destination => @toCity, :price => priceArray[i], :flight_number => flightArray[i], :departs => departsArray[i], :arrives => arrivesArray[i])
+      end
+    end
+
+end
+  
   def self.ATController
+    airportArray = ["BOS", "BWI", "MKE", "ATL", "MCO", "RSW", "TPA", "IND", "LGA", "FLL"]
+    
     #Get current Date
     currentYear = Time.now.year
     currentMonth = Time.now.month
@@ -46,38 +153,24 @@ class Scrape < ActiveRecord::Base
     		flightMonth = "0" + flightMonth.to_s
       end
     	formattedFlightMonth = flightYear.to_s + "-" + flightMonth.to_s
-    
-    	#Creates scraper for each route and calls scrape method
-    	#Each route (one-way) requires its own line
-    	puts "Scraping BOS for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MKE")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "ATL")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BOS", "MCO")
-    	puts "Scraping BWI for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MKE")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "ATL")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "BWI", "MCO")
-      puts "Scraping MKE for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "ATL")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MKE", "MCO")
-    	puts "Scraping ATL for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "BWI")
-      ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MKE")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "ATL", "MCO")
-    	puts "Scraping MCO for " + flightDay.to_s + " " + flightMonth.to_s
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BOS")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "BWI")
-    	ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "ATL")
-      ATCollect(flightDay.to_s, flightMonth.to_s, "MCO", "MKE")
+      airportArray.each do |o|
+        airportArray.each do |d|
+          if o != d
+            puts "Collecting AirTran - " + o + " to " + d + " for " + formattedFlightMonth + "-" + flightDay.to_s
+            begin
+              ATCollect(flightDay.to_s, flightMonth.to_s, o, d)
+            rescue
+              puts "***Failed to collect AirTran - " + o + " to " + d + " for " + formattedFlightDate
+            end
+          end
+        end
+      end
     end
   end
   
   def self.JBController
+    airportArray = ["BOS", "BWI", "MCO", "FLL", "JFK", "LGB", "IAD"]
+    
     #Get current Date
     currentYear = Time.now.year
     currentMonth = Time.now.month
@@ -116,201 +209,18 @@ class Scrape < ActiveRecord::Base
     		flightDay = "0" + flightDay.to_s
       end
     	formattedFlightDate = flightYear.to_s + "-" + flightMonth.to_s + "-" + flightDay.to_s
-    
-    	#Creates scraper for each route and calls scrape method
-    	#Each route (one-way) requires its own line
-    puts "Scraping BOS for " + formattedFlightDate
-    begin
-    	JBCollect(formattedFlightDate, "BOS", "BWI")
-    rescue
-    		puts "***Failed to collect BOS to BWI for " + formattedFlightDate
-    end
-
-    begin
-    	JBCollect(formattedFlightDate, "BOS", "LGB")
-    rescue
-    		puts "***Failed to collect BOS to LGB for " + formattedFlightDate
-    end
-    
-    begin
-    	JBCollect(formattedFlightDate, "BOS", "MCO")
-    rescue
-    		puts "***Failed to collect BOS to MCO for " + formattedFlightDate
-    end
-      
-    begin
-    	JBCollect(formattedFlightDate, "BOS", "FLL")
-    rescue
-    		puts "***Failed to collect BOS to FLL for " + formattedFlightDate
-    end
-    
-    begin
-    	JBCollect(formattedFlightDate, "BOS", "NYC")
-    rescue
-    		puts "***Failed to collect BOS to NYC for " + formattedFlightDate
-    end
-    
-    
-    puts "Scraping BWI for " + formattedFlightDate
-    begin
-    	JBCollect(formattedFlightDate, "BWI", "BOS")
-    rescue
-    		puts "***Failed to collect BWI to BOS for " + formattedFlightDate
-    end
-    
-    begin
-    	JBCollect(formattedFlightDate, "BWI", "LGB")
-    rescue
-    		puts "***Failed to collect BWI to LGB for " + formattedFlightDate
-    end
-    
-    begin
-    	JBCollect(formattedFlightDate, "BWI", "MCO")
-    rescue
-    		puts "***Failed to collect BWI to MCO for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "BWI", "FLL")
-    rescue
-    		puts "***Failed to collect BWI to FLL for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "BWI", "NYC")
-    rescue
-    		puts "***Failed to collect BWI to NYC for " + formattedFlightDate
-    end
-    
-    
-  	puts "Scraping LGB for " + formattedFlightDate
-    begin
-    	JBCollect(formattedFlightDate, "LGB", "BWI")
-    rescue
-    		puts "***Failed to collect LGB to BWI for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "LGB", "BOS")
-    rescue
-    		puts "***Failed to collect LGB to BOS for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "LGB", "MCO")
-    rescue
-    		puts "***Failed to collect LGB to MCO for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "LGB", "FLL")
-    rescue
-    		puts "***Failed to collect LGB to FLL for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "LGB", "NYC")
-    rescue
-    		puts "***Failed to collect LGB to NYC for " + formattedFlightDate
-    end
-    
-    
-    
-    puts "Scraping MCO for " + formattedFlightDate
-    begin
-    	JBCollect(formattedFlightDate, "MCO", "BWI")
-    rescue
-    		puts "***Failed to collect MCO to BWI for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "MCO", "LGB")
-    rescue
-    		puts "***Failed to collect MCO to LGB for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "MCO", "BOS")
-    rescue
-    		puts "***Failed to collect MCO to BOS for " + formattedFlightDate
-    end
-
-    begin
-    	JBCollect(formattedFlightDate, "MCO", "FLL")
-    rescue
-    		puts "***Failed to collect MCO to FLL for " + formattedFlightDate
-    end
-
-    begin
-    	JBCollect(formattedFlightDate, "MCO", "NYC")
-    rescue
-    		puts "***Failed to collect MCO to NYC for " + formattedFlightDate
-    end
-    
-    
-    
-  	puts "Scraping FLL for " + formattedFlightDate
-    begin
-    	JBCollect(formattedFlightDate, "FLL", "BWI")
-    rescue
-    		puts "***Failed to collect FLL to BWI for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "FLL", "LGB")
-    rescue
-    		puts "***Failed to collect FLL to LGB for " + formattedFlightDate
-    end
-
-    begin
-    	JBCollect(formattedFlightDate, "FLL", "MCO")
-    rescue
-    		puts "***Failed to collect FLL to MCO for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "FLL", "BOS")
-    rescue
-    		puts "***Failed to collect FLL to BOS for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "FLL", "NYC")
-    rescue
-    		puts "***Failed to collect FLL to NYC for " + formattedFlightDate
-    end
-
-  	puts "Scraping NYC for " + formattedFlightDate
-    begin
-    	JBCollect(formattedFlightDate, "NYC", "BWI")
-    rescue
-    		puts "***Failed to collect NYC to BWI for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "NYC", "LGB")
-    rescue
-    		puts "***Failed to collect NYC to LGB for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "NYC", "MCO")
-    rescue
-    		puts "***Failed to collect NYC to MCO for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "NYC", "FLL")
-    rescue
-    		puts "***Failed to collect NYC to FLL for " + formattedFlightDate
-    end
-  
-    begin
-    	JBCollect(formattedFlightDate, "NYC", "BOS")
-    rescue
-    		puts "***Failed to collect NYC to BOS for " + formattedFlightDate
-    end
-  
+      airportArray.each do |o|
+        airportArray.each do |d|
+          if o != d
+            puts "Collecting Jet Blue - " + o + " to " + d + " for " + formattedFlightDate
+            begin
+              JBCollect(formattedFlightDate, o, d)
+            rescue
+              puts "***Failed to collect Jet Blue - " + o + " to " + d + " for " + formattedFlightDate
+            end
+          end
+        end
+      end
   end
   end
   

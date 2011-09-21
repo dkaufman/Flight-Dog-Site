@@ -1,4 +1,4 @@
-1316540358
+1316577404
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	    cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
 0	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/spec/sample_jobs.rb	  cattr_accessor :runs; self.runs = 0
@@ -115,6 +115,10 @@ Plugins	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/
 Rails	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/jqplot-rails/lib/jqplot-rails_helpers.rb	  module Rails
 Railtie	/Users/Daniel/Documents/Sites/flight_dog/vendor/plugins/delayed_job/lib/delayed/railtie.rb	  class Railtie 
 RemoveCommentsTable	/Users/Daniel/Documents/Sites/flight_dog/db/migrate/20110804010946_remove_comments_table.rb	class RemoveCommentsTable 
+SWCollect	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	def self.SWCollect(date, fromCity, toCity)
+SWCollect	/Users/Daniel/Documents/Sites/flight_dog/southwest.rb	def self.SWCollect(date, fromCity, toCity)
+SWController	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	  def self.SWController
+SWController	/Users/Daniel/Documents/Sites/flight_dog/southwest.rb	def self.SWController
 Scrape	/Users/Daniel/Documents/Sites/flight_dog/app/models/scrape.rb	class Scrape 
 ScrapeJob	/Users/Daniel/Documents/Sites/flight_dog/lib/ScrapeJob.rb	class ScrapeJob 
 ScrapeTest	/Users/Daniel/Documents/Sites/flight_dog/test/unit/scrape_test.rb	class ScrapeTest 
