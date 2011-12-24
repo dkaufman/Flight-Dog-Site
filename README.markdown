@@ -1,1 +1,5 @@
-FarePlots is a site that allows users to search the database of flights collected by the FlightDog1.8.7 ruby script. It lives at fareplots.com.
+FarePlots is a site that allows users to view the price history of different flights. It relies on a set of ruby scripts that scrape pricing data from airline websites and store it in the FarePlots database. The scrapers use the Mechanize gem to fill out the forms and navigate the site, and find the relevant data using CSS selectors. Every time the scrape method is called, the app uses HireFire in conjunction with DelayedJob to add workers to the app. JQuery UI is used on the front end to give the site a smoother look.
+
+Currently, these scripts have been built for AirTran, Jet Blue, and Southwest. The user can select their flight, if available, and view a chart of the price movement. Prices are collected from a month before the flight to three days before. The site is hosted on Heroku and can be accessed at fareplots.com.
+
+In the future, I hope to add support for more airlines and routes and implement some more advanced analysis of price movements, potentially using the R statistics package.
